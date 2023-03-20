@@ -1,0 +1,6122 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>六、部署 Spring Boot 应用程序 · Spring Boot 中文文档</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="oopsguy.com">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-twilight.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="production-ready.html" />
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"repo":"DocsHome/springboot","types":["star","watch"],"size":"small"};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="boot-documentation.html">
+            
+                <a href="boot-documentation.html">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="boot-documentation.html">
+            
+                <a href="boot-documentation.html#boot-documentation">
+            
+                    
+                    一、Spring Boot 文档
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="boot-documentation.html">
+            
+                <a href="boot-documentation.html#boot-documentation-about">
+            
+                    
+                    1、关于本文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="boot-documentation.html">
+            
+                <a href="boot-documentation.html#boot-documentation-getting-help">
+            
+                    
+                    2、获取帮助
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="boot-documentation.html">
+            
+                <a href="boot-documentation.html#boot-documentation-first-steps">
+            
+                    
+                    3、起步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="boot-documentation.html">
+            
+                <a href="boot-documentation.html#_working_with_spring_boot">
+            
+                    
+                    4、使用 Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="boot-documentation.html">
+            
+                <a href="boot-documentation.html#_learning_about_spring_boot_features">
+            
+                    
+                    5、了解 Spring Boot 的新特性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="boot-documentation.html">
+            
+                <a href="boot-documentation.html#_moving_to_production">
+            
+                    
+                    6、生产环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="boot-documentation.html">
+            
+                <a href="boot-documentation.html#_advanced_topics">
+            
+                    
+                    7、高级内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="getting-started.html">
+            
+                <a href="getting-started.html">
+            
+                    
+                    二、入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-introducing-spring-boot">
+            
+                    
+                    8、Spring Boot 简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-system-requirements">
+            
+                    
+                    9、系统要求
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.2.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#_servlet_containers">
+            
+                    
+                    9.1、Servlet 容器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-installing-spring-boot">
+            
+                    
+                    10、安装 Spring Boot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-installation-instructions-for-java">
+            
+                    
+                    10.1、针对 Java 开发人员的安装说明
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.1.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-maven-installation">
+            
+                    
+                    10.1.1、Maven 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.1.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-gradle-installation">
+            
+                    
+                    10.1.2、Gradle 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-installing-the-cli">
+            
+                    
+                    10.2、安装 Spring Boot CLI
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.3.2.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-manual-cli-installation">
+            
+                    
+                    10.2.1、手动安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-sdkman-cli-installation">
+            
+                    
+                    10.2.2、使用 SDKMAN! 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-homebrew-cli-installation">
+            
+                    
+                    10.2.3、使用 OSX Homebrew 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.4" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-macports-cli-installation">
+            
+                    
+                    10.2.4、使用 MacPorts 安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.5" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-cli-command-line-completion">
+            
+                    
+                    10.2.5、命令行完成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.2.6" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-cli-example">
+            
+                    
+                    10.2.6、快速入门 Spring CLI 示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-upgrading-from-an-earlier-version">
+            
+                    
+                    10.3、升级旧版 Spring Boot
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-first-application">
+            
+                    
+                    11、开发第一个 Spring Boot 应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-first-application-pom">
+            
+                    
+                    11.1、 创建 POM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-first-application-dependencies">
+            
+                    
+                    11.2、 添加 Classpath 依赖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-first-application-code">
+            
+                    
+                    11.3、 编码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.4.3.1" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-first-application-annotations">
+            
+                    
+                    11.3.1、@RestController 与 @RequestMapping 注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3.2" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-first-application-auto-configuration">
+            
+                    
+                    11.3.2、@EnableAutoConfiguration 注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.3.3" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-first-application-main-method">
+            
+                    
+                    11.3.3、main 方法
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.4" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-first-application-run">
+            
+                    
+                    11.4、运行示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4.5" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-first-application-executable-jar">
+            
+                    
+                    11.5、创建可执行 jar
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="getting-started.html">
+            
+                <a href="getting-started.html#getting-started-whats-next">
+            
+                    
+                    12、下一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html">
+            
+                    
+                    三、使用 Spring Boot
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-build-systems">
+            
+                    
+                    13、构建系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-dependency-management">
+            
+                    
+                    13.1、依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-maven">
+            
+                    
+                    13.2、Maven
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.2.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-maven-parent-pom">
+            
+                    
+                    13.2.1、继承 Starter Parent
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.2.1.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-maven-without-a-parent">
+            
+                    
+                    13.2.2、不使用父 POM
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.1.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-maven-plugin">
+            
+                    
+                    13.2.3、使用 Spring Boot Maven 插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.3" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-gradle">
+            
+                    
+                    13.3、Gradle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.4" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-ant">
+            
+                    
+                    13.4、Ant
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.5" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-starter">
+            
+                    
+                    13.5、Starter
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-structuring-your-code">
+            
+                    
+                    14、组织代码
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.2.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-using-the-default-package">
+            
+                    
+                    14.1、使用 default 包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-locating-the-main-class">
+            
+                    
+                    14.2、定位主应用类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-configuration-classes">
+            
+                    
+                    15、配置类
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.3.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-importing-configuration">
+            
+                    
+                    15.1、导入额外的配置类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-importing-xml-configuration">
+            
+                    
+                    15.2、导入 XML 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-auto-configuration">
+            
+                    
+                    16、自动配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.4.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-replacing-auto-configuration">
+            
+                    
+                    16.1、平滑替换自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.4.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-disabling-specific-auto-configuration">
+            
+                    
+                    16.2、禁用指定的自动配置类
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.5" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-spring-beans-and-dependency-injection">
+            
+                    
+                    17、Spring Bean 与依赖注入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.6" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-using-springbootapplication-annotation">
+            
+                    
+                    18、使用 @SpringBootApplication 注解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-running-your-application">
+            
+                    
+                    19、运行您的应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.7.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-running-your-application">
+            
+                    
+                    19.1、使用 IDE 运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-running-as-a-packaged-application">
+            
+                    
+                    19.2、作为打包应用运行
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.3" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-running-with-the-maven-plugin">
+            
+                    
+                    19.3、使用 Maven 插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.4" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-running-with-the-gradle-plugin">
+            
+                    
+                    19.4、使用 Gradle 插件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.7.5" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-hot-swapping">
+            
+                    
+                    19.5、热交换
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools">
+            
+                    
+                    20、开发者工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.8.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-property-defaults">
+            
+                    
+                    20.1、Property 默认值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-restart">
+            
+                    
+                    20.2、自动重启
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.8.2.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-restart-logging-condition-delta">
+            
+                    
+                    20.2.1、条件评估变更日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.2.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-restart-exclude">
+            
+                    
+                    20.2.2、排除资源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.2.3" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-restart-additional-paths">
+            
+                    
+                    20.2.3、监视附加路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.2.4" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-restart-disable">
+            
+                    
+                    20.2.4、禁用重启
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.2.5" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-restart-triggerfile">
+            
+                    
+                    20.2.5、使用触发文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.2.6" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-customizing-classload">
+            
+                    
+                    20.2.6、自定义重启类加载器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.2.7" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-known-restart-limitations">
+            
+                    
+                    20.2.7、已知限制
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.3" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-livereload">
+            
+                    
+                    20.3、LiveReload
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.4" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-globalsettings">
+            
+                    
+                    20.4、全局设置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.5" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-remote">
+            
+                    
+                    20.5、远程应用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.8.5.1" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#_running_the_remote_client_application">
+            
+                    
+                    20.5.1、运行远程客户端应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.8.5.2" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-devtools-remote-update">
+            
+                    
+                    20.5.2、远程更新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.9" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-packaging-for-production">
+            
+                    
+                    21、打包生产应用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.10" data-path="using-spring-boot.html">
+            
+                <a href="using-spring-boot.html#using-boot-whats-next">
+            
+                    
+                    22、下一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features">
+            
+                    
+                    四、Spring Boot 特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-application">
+            
+                    
+                    23、SpringApplication
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-startup-failure">
+            
+                    
+                    23.1、启动失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-banner">
+            
+                    
+                    23.2、自定义 banner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-customizing-spring-application">
+            
+                    
+                    23.3、自定义 SpringApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-customizing-spring-application">
+            
+                    
+                    23.4、Fluent Builder API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-application-events-and-listeners">
+            
+                    
+                    23.5、应用程序事件与监听器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-web-environment">
+            
+                    
+                    23.6、Web 环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.7" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-application-arguments">
+            
+                    
+                    23.7、访问应用程序参数
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.8" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-command-line-runner">
+            
+                    
+                    23.8、使用 ApplicationRunner 或 ApplicationRunner
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.9" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-application-exit">
+            
+                    
+                    23.9、应用程序退出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.1.10" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-application-admin">
+            
+                    
+                    23.10、管理功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config">
+            
+                    
+                    24、外部化配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-random-values">
+            
+                    
+                    24.1、配置随机值
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-command-line-args">
+            
+                    
+                    24.2、访问命令行属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-application-property-files">
+            
+                    
+                    24.3、应用程序属性文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-profile-specific-properties">
+            
+                    
+                    24.4、特定 Profile 的属性文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-placeholders-in-properties">
+            
+                    
+                    24.5、属性中的占位符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-encrypting-properties">
+            
+                    
+                    24.6、加密属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.7" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-yaml">
+            
+                    
+                    24.7、使用 YAML 代替属性文件
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.7.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-loading-yaml">
+            
+                    
+                    24.7.1、加载 YAML
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.7.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-exposing-yaml-to-spring">
+            
+                    
+                    24.7.2、在 Spring Environment 中将 YAML 暴露为属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.7.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-multi-profile-yaml">
+            
+                    
+                    24.7.3、多 profile YAML 文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.7.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-yaml-shortcomings">
+            
+                    
+                    24.7.4、YAML 的缺点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.8" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-typesafe-configuration-properties">
+            
+                    
+                    24.8、类型安全的配置属性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.8.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-3rd-party-configuration">
+            
+                    
+                    24.8.1、第三方配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.8.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-relaxed-binding">
+            
+                    
+                    24.8.2、宽松绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.8.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-complex-type-merge">
+            
+                    
+                    24.8.3、合并复杂类型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.8.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-conversion">
+            
+                    
+                    24.8.4、属性转换
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.2.8.4.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-conversion-duration">
+            
+                    
+                    转换 duration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.8.4.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-conversion-datasize">
+            
+                    
+                    转换 Data Size
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.8.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-validation">
+            
+                    
+                    24.8.5、@ConfigurationProperties 验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2.8.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-external-config-vs-value">
+            
+                    
+                    24.8.6、@ConfigurationProperties 与 @Value 对比
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-profiles">
+            
+                    
+                    25、Profile
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.3.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-adding-active-profiles">
+            
+                    
+                    25.1、添加激活 Profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-programmatically-setting-profiles">
+            
+                    
+                    25.2、以编程方式设置 Profile
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-profile-specific-configuration">
+            
+                    
+                    25.3、特定 Profile 的配置文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-logging">
+            
+                    
+                    26、日志记录
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-logging-format">
+            
+                    
+                    26.1、日志格式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-logging-console-output">
+            
+                    
+                    26.2、控制台输出
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.2.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-logging-color-coded-output">
+            
+                    
+                    26.2.1、着色输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-logging-file-output">
+            
+                    
+                    26.3、文件输出
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-custom-log-levels">
+            
+                    
+                    26.4、日志等级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-custom-log-groups">
+            
+                    
+                    26.5、日志组
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-custom-log-configuration">
+            
+                    
+                    26.6、自定义日志配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.7" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-logback-extensions">
+            
+                    
+                    26.7、Logback 扩展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.4.7.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#_profile_specific_configuration">
+            
+                    
+                    26.7.1、特定 Profile 配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4.7.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#_environment_properties">
+            
+                    
+                    26.7.2、环境属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-json">
+            
+                    
+                    27、JSON
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.5.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-json-jackson">
+            
+                    
+                    27.1、Jackson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-json-gson">
+            
+                    
+                    27.2、Gson
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-json-json-b">
+            
+                    
+                    27.3、JSON-B
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-developing-web-applications">
+            
+                    
+                    28、开发 Web 应用程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-mvc">
+            
+                    
+                    28.1、Spring Web MVC 框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.1.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-mvc-auto-configuration">
+            
+                    
+                    28.1.1、Spring MVC 自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-mvc-message-converters">
+            
+                    
+                    28.1.2、HttpMessageConverters
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-message-codes">
+            
+                    
+                    28.1.3、自定义 JSON Serializer 和 Deserializer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-mvc-static-content">
+            
+                    
+                    28.1.5、静态内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-mvc-welcome-page">
+            
+                    
+                    28.1.6、欢迎页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-mvc-favicon">
+            
+                    
+                    28.1.7、自定义 Favicon
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.7" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-mvc-pathmatch">
+            
+                    
+                    28.1.8、路径匹配与内容协商
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.8" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-mvc-web-binding-initializer">
+            
+                    
+                    28.1.9、ConfigurableWebBindingInitializer
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.9" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-mvc-template-engines">
+            
+                    
+                    28.1.10、模板引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.10" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-error-handling">
+            
+                    
+                    28.1.11、错误处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.1.10.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-error-handling-custom-error-pages">
+            
+                    
+                    28.1.11.1、自定义错误页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.10.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-error-handling-mapping-error-pages-without-mvc">
+            
+                    
+                    28.1.11.2、映射到 Spring MVC 之外的错误页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.11" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-hateoas">
+            
+                    
+                    28.1.12、Spring HATEOAS
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.1.12" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-cors">
+            
+                    
+                    28.1.13、CORS 支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webflux">
+            
+                    
+                    28.2、Spring WebFlux 框架
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.2.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webflux-auto-configuration">
+            
+                    
+                    28.2.1、Spring WebFlux 自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webflux-httpcodecs">
+            
+                    
+                    28.2.2、使用 HttpMessageReader 和 HttpMessageWriter 作为 HTTP 编解码器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webflux-static-content">
+            
+                    
+                    28.2.3、静态内容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webflux-template-engines">
+            
+                    
+                    28.2.4、模板引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webflux-error-handling">
+            
+                    
+                    28.2.5、错误处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.2.5.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webflux-error-handling-custom-error-pages">
+            
+                    
+                    28.2.5.1、自定义错误页面
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.2.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webflux-web-filters">
+            
+                    
+                    28.2.6、Web 过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jersey">
+            
+                    
+                    28.3、JAX-RS 与 Jersey
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-embedded-container">
+            
+                    
+                    28.4、内嵌 Servlet 容器支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.4.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-embedded-container-servlets-filters-listeners">
+            
+                    
+                    28.4.1、Servlet、Filter 与 Listener
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.4.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-embedded-container-context-initializer">
+            
+                    
+                    28.4.2、Servlet 上下文初始化
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.4.2.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-embedded-container-servlets-filters-listeners-scanning">
+            
+                    
+                    28.4.2.1、扫描 Servlet、Filter 和 Listener
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.4.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-embedded-container-application-context">
+            
+                    
+                    28.4.3、ServletWebServerApplicationContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.4.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-customizing-embedded-containers">
+            
+                    
+                    28.4.4、自定义内嵌 Servlet 容器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.6.4.4.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-programmatic-embedded-container-customization">
+            
+                    
+                    28.4.4.1、以编程方式自定义
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.4.4.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-customizing-configurableservletwebserverfactory-directly">
+            
+                    
+                    28.4.4.2、直接自定义 ConfigurableServletWebServerFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.4.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jsp-limitations">
+            
+                    
+                    28.4.5、JSP 局限
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-reactive-server">
+            
+                    
+                    28.5、内嵌响应式服务器支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-reactive-server-resources">
+            
+                    
+                    28.6、响应式服务器资源配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-security">
+            
+                    
+                    29、安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.7.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-security-mvc">
+            
+                    
+                    29.1、MVC 安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-security-webflux">
+            
+                    
+                    29.2、WebFlux 安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-security-oauth2">
+            
+                    
+                    29.3、OAuth2
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.7.3.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-security-oauth2-client">
+            
+                    
+                    29.3.1、客户端
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.7.3.1.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-security-oauth2-common-providers">
+            
+                    
+                    OAuth2 客户端注册常见的提供者
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7.3.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-security-oauth2-server">
+            
+                    
+                    29.3.2、资源服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7.3.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#_authorization_server">
+            
+                    
+                    29.3.3、授权服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-security-actuator">
+            
+                    
+                    29.4、Actuator 安全
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.7.4.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-security-csrf">
+            
+                    
+                    29.4.1、跨站请求伪造保护
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-sql">
+            
+                    
+                    30、使用 SQL 数据库
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.8.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-configure-datasource">
+            
+                    
+                    30.1、配置数据源
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.8.1.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-embedded-database-support">
+            
+                    
+                    30.1.1、内嵌数据库支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.1.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connect-to-production-database">
+            
+                    
+                    30.1.2、连接生产数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.1.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-a-jndi-datasource">
+            
+                    
+                    30.1.3、连接 JNDI 数据源
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-using-jdbc-template">
+            
+                    
+                    30.2、使用 JdbcTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jpa-and-spring-data">
+            
+                    
+                    30.3、JPA 与 Spring Data JPA
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.8.3.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jpa-and-spring-data">
+            
+                    
+                    30.3.1、实体类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.3.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-data-jpa-repositories">
+            
+                    
+                    30.3.2、Spring Data JPA 资源库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.3.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-creating-and-dropping-jpa-databases">
+            
+                    
+                    30.3.3、创建和删除 JPA 数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.3.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jpa-in-web-environment">
+            
+                    
+                    30.3.4、在视图中打开 EntityManager
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-data-jdbc">
+            
+                    
+                    30.4、Spring Data JDBC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-sql-h2-console">
+            
+                    
+                    30.5、使用 H2 的 Web 控制台
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.8.5.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-sql-h2-console-custom-path">
+            
+                    
+                    30.5.1、更改 H2 控制台的路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jooq">
+            
+                    
+                    30.6、使用 jOOQ
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.8.6.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#_code_generation">
+            
+                    
+                    30.6.1、代码生成
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.6.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#_using_dslcontext">
+            
+                    
+                    30.6.2、使用 DSLContext
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.6.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#_jooq_sql_dialect">
+            
+                    
+                    30.6.3、jOOQ SQL 方言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8.6.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#_customizing_jooq">
+            
+                    
+                    30.6.4、自定义 jOOQ
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-nosql">
+            
+                    
+                    31、使用 NoSQL 技术
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-redis">
+            
+                    
+                    31.1、Redis
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.1.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-redis">
+            
+                    
+                    31.1.1、连接 Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-mongodb">
+            
+                    
+                    31.2、MongoDB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.2.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-mongodb">
+            
+                    
+                    31.2.1、连接 MongoDB 数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.2.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-mongo-template">
+            
+                    
+                    31.2.2、MongoTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.2.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-data-mongo-repositories">
+            
+                    
+                    31.2.3、Spring Data MongoDB 资源库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.2.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-mongo-embedded">
+            
+                    
+                    31.2.4、内嵌 Mongo
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-neo4j">
+            
+                    
+                    31.3、Neo4j
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.3.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-neo4j">
+            
+                    
+                    31.3.1、连接 Neo4j 数据库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.3.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-neo4j-embedded">
+            
+                    
+                    31.3.2、使用内嵌模式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.3.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-neo4j-ogm-session">
+            
+                    
+                    31.3.3、Neo4jSession
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.3.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-data-neo4j-repositories">
+            
+                    
+                    31.3.4、Spring Data Neo4j 资源库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-gemfire">
+            
+                    
+                    31.4、Gemfire
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-solr">
+            
+                    
+                    31.5、Solr
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.5.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-solr">
+            
+                    
+                    31.5.1、连接 Solr
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.5.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-data-solr-repositories">
+            
+                    
+                    31.5.2、Spring Data Solr 资源库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-elasticsearch">
+            
+                    
+                    31.6、Elasticsearch
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.6.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-elasticsearch-rest">
+            
+                    
+                    31.6.1、使用 REST 客户端连接 Elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.6.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-elasticsearch-jest">
+            
+                    
+                    31.6.2、使用 Jest 连接 Elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.6.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-elasticsearch-spring-data">
+            
+                    
+                    31.6.3、使用 Spring Data 连接 Elasticsearch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.6.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-data-elasticsearch-repositories">
+            
+                    
+                    31.6.4、Spring Data Elasticsearch 资源库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.7" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-cassandra">
+            
+                    
+                    31.7、Cassandra
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.7.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-cassandra">
+            
+                    
+                    31.7.1、连接 Cassandra
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.7.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-data-cassandra-repositories">
+            
+                    
+                    31.7.2、Spring Data Cassandra 资源库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.8" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-couchbase">
+            
+                    
+                    31.8、Couchbase
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.8.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-couchbase">
+            
+                    
+                    31.8.1、连接 Couchbase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.8.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spring-data-couchbase-repositories">
+            
+                    
+                    31.8.2、Spring Data Couchbase 资源库
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.9" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-ldap">
+            
+                    
+                    31.9、LDAP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.9.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-ldap-connecting">
+            
+                    
+                    31.9.1、连接 LDAP 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.9.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-ldap-spring-data-repositories">
+            
+                    
+                    31.9.2、Spring Data LDAP 资源库
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.9.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-ldap-embedded">
+            
+                    
+                    31.9.3、内嵌内存式 LDAP 服务器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.9.10" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-influxdb">
+            
+                    
+                    31.10、InfluxDB
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.9.10.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-connecting-to-influxdb">
+            
+                    
+                    31.10.1、连接 InfluxDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching">
+            
+                    
+                    32、缓存
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.10.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider">
+            
+                    
+                    32.1、支持的缓存提供者
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.10.1.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-generic">
+            
+                    
+                    32.1.1、Generic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.1.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-jcache">
+            
+                    
+                    32.1.2、JCache (JSR-107)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.1.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-ehcache2">
+            
+                    
+                    32.1.3、EhCache 2.x
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.1.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-hazelcast">
+            
+                    
+                    32.1.4、Hazelcast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.1.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-infinispan">
+            
+                    
+                    32.1.5、Infinispan
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.1.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-couchbase">
+            
+                    
+                    32.1.6、Couchbase
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.1.7" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-redis">
+            
+                    
+                    32.1.7、Redis
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.1.8" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-caffeine">
+            
+                    
+                    32.1.8、Caffeine
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.1.9" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-simple">
+            
+                    
+                    32.1.9、Simple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.10.1.10" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-caching-provider-none">
+            
+                    
+                    32.1.10、None
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-messaging">
+            
+                    
+                    33、消息传递
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.11.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jms">
+            
+                    
+                    33.1、JMS
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.11.1.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-activemq">
+            
+                    
+                    33.1.1、ActiveMQ 支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.1.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-artemis">
+            
+                    
+                    33.1.2、Artemis 支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.1.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jms-jndi">
+            
+                    
+                    33.1.3、使用 JNDI ConnectionFactory
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.1.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-using-jms-sending">
+            
+                    
+                    33.1.4、发送消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.1.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-using-jms-receiving">
+            
+                    
+                    33.1.5、接收消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-amqp">
+            
+                    
+                    33.2、AMQP
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.11.2.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-rabbitmq">
+            
+                    
+                    33.2.1、RabbitMQ 支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.2.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-using-amqp-sending">
+            
+                    
+                    33.2.2、发送消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.2.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-using-amqp-receiving">
+            
+                    
+                    33.2.3、接收消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kafka">
+            
+                    
+                    33.3、Apache Kafka 支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.11.3.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kafka-sending-a-message">
+            
+                    
+                    33.3.1、发送消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.3.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kafka-receiving-a-message">
+            
+                    
+                    33.3.2、接收消息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.3.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kafka-streams">
+            
+                    
+                    33.3.3、Kafka Stream
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.11.3.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kafka-extra-props">
+            
+                    
+                    33.3.4、其他 Kafka 属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-resttemplate">
+            
+                    
+                    34、使用 RestTemplate 调用 REST 服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.12.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-resttemplate-customization">
+            
+                    
+                    34.1、自定义 RestTemplate
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.12.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-resttemplate">
+            
+                    
+                    34、使用 RestTemplate 调用 REST 服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webclient">
+            
+                    
+                    35、使用 WebClient 调用 REST 服务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.13.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webclient-runtime">
+            
+                    
+                    35.1、WebClient 运行时
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.13.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webclient-customization">
+            
+                    
+                    35.2、自定义 WebClient
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.14" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-validation">
+            
+                    
+                    36、验证
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.15" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-email">
+            
+                    
+                    37、发送邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jta">
+            
+                    
+                    38、JTA 分布式事务
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.16.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jta-atomikos">
+            
+                    
+                    38.1、使用 Atomikos 事务管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jta-bitronix">
+            
+                    
+                    38.2、使用 Bitronix 事务管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jta-javaee">
+            
+                    
+                    38.3、使用 Java EE 管理的事务管理器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.16.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jta-mixed-jms">
+            
+                    
+                    38.4、混合使用 XA 与非 XA JMS 连接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.17" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-hazelcast">
+            
+                    
+                    39、Hazelcast
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.18" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-quartz">
+            
+                    
+                    40、Quartz 调度器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.19" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-task-execution-scheduling">
+            
+                    
+                    41、任务执行与调度
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.20" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-integration">
+            
+                    
+                    42、Spring Integration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.21" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-session">
+            
+                    
+                    43、Spring Session
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.22" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-jmx">
+            
+                    
+                    44、通过 JMX 监控和管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.23" >
+            
+                <span>
+            
+                    
+                    45、测试
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.24" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-websockets">
+            
+                    
+                    46、WebSocket
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.25" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webservices">
+            
+                    
+                    47、Web Service
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.25.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-webservices-template">
+            
+                    
+                    47.1、使用 WebServiceTemplate 调用 Web Service
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-developing-auto-configuration">
+            
+                    
+                    49、创建自己的自动配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.26.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-understanding-auto-configured-beans">
+            
+                    
+                    49.1、理解自定配置 Bean
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-locating-auto-configuration-candidates">
+            
+                    
+                    49.2、找到候选的自动配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-condition-annotations">
+            
+                    
+                    49.3、条件注解
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.26.3.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-class-conditions">
+            
+                    
+                    49.3.1、类条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.3.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-bean-conditions">
+            
+                    
+                    49.3.2、Bean 条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.3.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-property-conditions">
+            
+                    
+                    49.3.3、属性条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.3.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-resource-conditions">
+            
+                    
+                    49.3.4、资源条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.3.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-web-application-conditions">
+            
+                    
+                    49.3.5、Web 应用程序条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.3.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-spel-conditions">
+            
+                    
+                    49.3.6、SpEL 表达式条件
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-test-autoconfig">
+            
+                    
+                    49.4、测试自动配置
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.26.4.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#_simulating_a_web_context">
+            
+                    
+                    49.4.1、模拟一个 Web 上下文
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.4.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#_overriding_the_classpath">
+            
+                    
+                    49.4.2、覆盖 Classpath
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-custom-starter">
+            
+                    
+                    49.5、创建自己的 Starter
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.26.5.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-custom-starter-naming">
+            
+                    
+                    49.5.1、命名
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.5.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-custom-starter-module-autoconfigure">
+            
+                    
+                    49.5.2、autoconfigure 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.26.5.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-custom-starter-module-starter">
+            
+                    
+                    49.5.3、Starter 模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin">
+            
+                    
+                    50、Kotlin 支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.27.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-requirements">
+            
+                    
+                    50.1、要求
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-null-safety">
+            
+                    
+                    50.2、Null 安全
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27.3" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-api">
+            
+                    
+                    50.3、Kotlin API
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.27.3.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-api-runapplication">
+            
+                    
+                    50.3.1、runApplication
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27.3.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-api-extensions">
+            
+                    
+                    50.3.2、扩展
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27.4" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-dependency-management">
+            
+                    
+                    50.4、依赖管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27.5" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-configuration-properties">
+            
+                    
+                    50.5、@ConfigurationProperties
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27.6" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-testing">
+            
+                    
+                    50.6、测试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27.7" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-resources">
+            
+                    
+                    50.7、资源
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.27.7.1" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-resources-further-reading">
+            
+                    
+                    50.7.1、进阶阅读
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.27.7.2" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-kotlin-resources-examples">
+            
+                    
+                    50.7.2、示例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.28" data-path="spring-boot-features.html">
+            
+                <a href="spring-boot-features.html#boot-features-whats-next">
+            
+                    
+                    51、下一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready">
+            
+                    
+                    五、Spring Boot Actuator: 生产就绪功能
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-enabling">
+            
+                    
+                    52、启用生产就绪功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints">
+            
+                    
+                    53、端点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-enabling-endpoints">
+            
+                    
+                    53.1、启用端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-exposing-endpoints">
+            
+                    
+                    53.2、暴露端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-security">
+            
+                    
+                    53.3、保护 HTTP 端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.4" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-caching">
+            
+                    
+                    53.4、配置端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.5" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-hypermedia">
+            
+                    
+                    53.5、Actuator Web 端点超媒体
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.6" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-cors">
+            
+                    
+                    53.6、跨域支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-custom">
+            
+                    
+                    53.7、实现自定义端点
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.7.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-custom-input">
+            
+                    
+                    53.7.1、接收输入
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-custom-web">
+            
+                    
+                    53.7.2、自定义 Web 端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-custom-servlet">
+            
+                    
+                    53.7.3、Servlet 端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.7.4" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-custom-controller">
+            
+                    
+                    53.7.4、控制器端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.8" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-endpoints-custom-controller">
+            
+                    
+                    53.8、健康信息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.8.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#_auto_configured_healthindicators">
+            
+                    
+                    53.8.1、自动配置的 HealthIndicator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.8.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#_writing_custom_healthindicators">
+            
+                    
+                    53.8.2、编写自定义 HealthIndicator
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.8.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#reactive-health-indicators">
+            
+                    
+                    53.8.3、响应式健康指示器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.8.4" data-path="production-ready.html">
+            
+                <a href="production-ready.html#_auto_configured_reactivehealthindicators">
+            
+                    
+                    53.8.4、自动配置的 ReactiveHealthIndicator
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.9" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-application-info">
+            
+                    
+                    53.9、应用程序信息
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.2.9.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-application-info">
+            
+                    
+                    53.9.1、自动配置的 InfoContributor
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.9.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-application-info-env">
+            
+                    
+                    53.9.2、自定义应用程序信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.9.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-application-info-git">
+            
+                    
+                    53.9.3、Git 提交信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.9.4" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-application-info-build">
+            
+                    
+                    53.9.4、构建信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2.9.5" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-application-info-build">
+            
+                    
+                    53.9.5、编写自定义 InfoContributor
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-monitoring">
+            
+                    
+                    54、通过 HTTP 监控和管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.3.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-customizing-management-server-context-path">
+            
+                    
+                    54.1、自定义 Management 端点路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-customizing-management-server-port">
+            
+                    
+                    54.2、自定义 Management 服务器端口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-management-specific-ssl">
+            
+                    
+                    54.3、配置 Management 的 SSL
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.4" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-customizing-management-server-address">
+            
+                    
+                    54.4、配置 Management 服务器地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3.5" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-disabling-http-endpoints">
+            
+                    
+                    54.5、禁用 HTTP 端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-jmx">
+            
+                    
+                    55、通过 JMX 监控和管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-custom-mbean-names">
+            
+                    
+                    55.1、自定义 MBean 名称
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-disable-jmx-endpoints">
+            
+                    
+                    55.2、禁用 JMX 端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-jolokia">
+            
+                    
+                    55.3、通过 HTTP 使用 Jolokia 访问 JMX
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.4.3.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-customizing-jolokia">
+            
+                    
+                    55.3.1、自定义 Jolokia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.4.3.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-disabling-jolokia">
+            
+                    
+                    55.3.2、禁用 Jolokia
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.5" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-loggers">
+            
+                    
+                    56、日志记录器
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.5.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-logger-configuration">
+            
+                    
+                    56.1、配置一个日志记录器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics">
+            
+                    
+                    57、指标
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-getting-started">
+            
+                    
+                    57.1、入门
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export">
+            
+                    
+                    57.2、支持的监控系统
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.2.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-appoptics">
+            
+                    
+                    57.2.1、AppOptics
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-atlas">
+            
+                    
+                    57.2.2、Atlas
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-datadog">
+            
+                    
+                    57.2.3、Datadog
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.4" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-dynatrace">
+            
+                    
+                    57.2.4、Dynatrace
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.5" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-elastic">
+            
+                    
+                    57.2.5、Elastic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.6" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-ganglia">
+            
+                    
+                    57.2.6、Ganglia
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.7" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-graphite">
+            
+                    
+                    57.2.7、Graphite
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.8" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-humio">
+            
+                    
+                    57.2.8、Humio
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.9" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-influx">
+            
+                    
+                    57.2.9、Influx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.10" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-jmx">
+            
+                    
+                    57.2.10、JMX
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.11" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-kairos">
+            
+                    
+                    57.2.11、KairosDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.12" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-newrelic">
+            
+                    
+                    57.2.12、New Relic
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.13" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-prometheus">
+            
+                    
+                    57.2.13、Prometheus
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.14" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-signalfx">
+            
+                    
+                    57.2.14、SignalFx
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.15" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-simple">
+            
+                    
+                    57.2.15、Simple
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.16" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-statsd">
+            
+                    
+                    57.2.16、StatsD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.2.17" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-export-wavefront">
+            
+                    
+                    57.2.17、Wavefront
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-meter">
+            
+                    
+                    57.3、支持的指标
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.3.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-spring-mvc">
+            
+                    
+                    57.3.1、Spring MVC 指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-web-flux">
+            
+                    
+                    57.3.2、Spring WebFlux 指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-jersey-server">
+            
+                    
+                    57.3.3、Jersey Server 指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3.4" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-http-clients">
+            
+                    
+                    57.3.4、HTTP Client 指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3.5" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-cache">
+            
+                    
+                    57.3.5、Cache 指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3.6" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-jdbc">
+            
+                    
+                    57.3.6、数据源指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3.7" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-hibernate">
+            
+                    
+                    57.3.7、Hibernate 指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.3.8" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-rabbitmq">
+            
+                    
+                    57.3.8、RabbitMQ 指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.4" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-custom">
+            
+                    
+                    57.4、注册自定义指标
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.5" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-per-meter-properties">
+            
+                    
+                    57.5、自定义单独指标
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.6.5.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-common-tags">
+            
+                    
+                    57.5.1、自定义标签
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.5.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#_per_meter_properties">
+            
+                    
+                    57.5.2、Per-meter 属性
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.6.6" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-metrics-endpoint">
+            
+                    
+                    57.6、指标端点
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.7" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-auditing">
+            
+                    
+                    58、审计
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.8" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-http-tracing">
+            
+                    
+                    59、HTTP 追踪
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.8.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-http-tracing-custom">
+            
+                    
+                    59.1、自定义 HTTP 追踪
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-process-monitoring">
+            
+                    
+                    60、进程监控
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.9.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-process-monitoring-configuration">
+            
+                    
+                    60.1、扩展配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.9.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-process-monitoring-configuration">
+            
+                    
+                    60.2、编程方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-cloudfoundry">
+            
+                    
+                    61、Cloud Foundry 支持
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.10.1" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-cloudfoundry-disable">
+            
+                    
+                    61.1、禁用 Cloud Foundry Actuator 扩展支持
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10.2" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-cloudfoundry-ssl">
+            
+                    
+                    61.2、Cloud Foundry 自签名证书
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.10.3" data-path="production-ready.html">
+            
+                <a href="production-ready.html#_custom_context_path">
+            
+                    
+                    61.3、自定义上下文路径
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.11" data-path="production-ready.html">
+            
+                <a href="production-ready.html#production-ready-auditing">
+            
+                    
+                    62、下一步
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8" data-path="deployment.html">
+            
+                <a href="deployment.html">
+            
+                    
+                    六、部署 Spring Boot 应用程序
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" >
+            
+                <span>
+            
+                    
+                    63、部署到云端
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" >
+            
+                <span>
+            
+                    
+                    64、安装 Spring Boot 应用程序
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" >
+            
+                <span>
+            
+                    
+                    65、下一步
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" >
+            
+                <span>
+            
+                    
+                    七、Spring Boot CLI
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.9.1" >
+            
+                <span>
+            
+                    
+                    66、安装 CLI
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.2" >
+            
+                <span>
+            
+                    
+                    67、使用 CLI
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.3" >
+            
+                <span>
+            
+                    
+                    68、使用 Groovy Beans DSL 部署应用程序
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.4" >
+            
+                <span>
+            
+                    
+                    69、使用  配置 CLI
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9.5" >
+            
+                <span>
+            
+                    
+                    70、下一步
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" >
+            
+                <span>
+            
+                    
+                    八、构建工具插件
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" >
+            
+                <span>
+            
+                    
+                    71、Spring Boot Maven 插件
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.2" >
+            
+                <span>
+            
+                    
+                    72、Spring Boot Gradle 插件
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.3" >
+            
+                <span>
+            
+                    
+                    73、Spring Boot AntLib 模块
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.4" >
+            
+                <span>
+            
+                    
+                    74、支持其他构建系统
+            
+                </span>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10.5" >
+            
+                <span>
+            
+                    
+                    75、下一步
+            
+                </span>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >六、部署 Spring Boot 应用程序</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <p><a id="deployment"></a></p>
+<h1 id="&#x516D;&#x3001;&#x90E8;&#x7F72;-spring-boot-&#x5E94;&#x7528;&#x7A0B;&#x5E8F;">&#x516D;&#x3001;&#x90E8;&#x7F72; Spring Boot &#x5E94;&#x7528;&#x7A0B;&#x5E8F;</h1>
+<p>Spring Boot &#x7684;&#x53EF;&#x6267;&#x884C; jar &#x662F;&#x73B0;&#x6210;&#x7684;&#xFF0C;&#x9002;&#x7528;&#x4E8E;&#x5927;&#x591A;&#x6570;&#x6D41;&#x884C;&#x7684;&#x4E91; PaaS&#xFF08;Platform-as-a-Service&#xFF0C;&#x5E73;&#x53F0;&#x5373;&#x670D;&#x52A1;&#xFF09;&#x63D0;&#x4F9B;&#x5546;&#x3002;&#x8FD9;&#x4E9B;&#x63D0;&#x4F9B;&#x5546;&#x5F80;&#x5F80;&#x8981;&#x6C42;&#x4F60;&#x300C;&#x81EA;&#x5E26;&#x5BB9;&#x5668;&#x300D;&#x3002;&#x5B83;&#x4EEC;&#x8D1F;&#x8D23;&#x7BA1;&#x7406;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x8FDB;&#x7A0B;&#xFF08;&#x800C;&#x4E0D;&#x662F; Java &#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF09;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4E2D;&#x95F4;&#x5C42;&#xFF0C;&#x4F7F;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x9002;&#x5E94;&#x4E91;&#x6982;&#x5FF5;&#x4E2D;&#x7684;&#x8FD0;&#x884C;&#x8FDB;&#x7A0B;&#x3002;</p>
+<p>&#x6709;&#x4E24;&#x4E2A;&#x6D41;&#x884C;&#x7684;&#x4E91;&#x63D0;&#x4F9B;&#x5546; Heroku &#x548C; Cloud Foundry &#x91C7;&#x7528;&#x4E86; buildpack &#x65B9;&#x5F0F;&#x3002;buildpack &#x5C06;&#x4F60;&#x90E8;&#x7F72;&#x7684;&#x4EE3;&#x7801;&#x5305;&#x88C5;&#x5728;&#x542F;&#x52A8;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x6240;&#x9700;&#x7684;&#x73AF;&#x5883;&#x4E2D;&#x3002;&#x5B83;&#x53EF;&#x80FD;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x8C03;&#x7528; <code>java</code> &#x7684; JDK&#x3001;&#x4E00;&#x4E2A;&#x5185;&#x5D4C; Web &#x670D;&#x52A1;&#x5668;&#x6216;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#x670D;&#x52A1;&#x5668;&#x3002;buildpack &#x662F;&#x53EF;&#x63D2;&#x62D4;&#x7684;&#xFF0C;&#x4F46;&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x5E94;&#x5C3D;&#x53EF;&#x80FD;&#x5C11;&#x5730;&#x8FDB;&#x884C;&#x81EA;&#x5B9A;&#x4E49;&#x3002;&#x5176;&#x51CF;&#x5C11;&#x4E86;&#x4E0D;&#x53D7;&#x63A7;&#x5236;&#x7684;&#x529F;&#x80FD;&#x6570;&#xFF0C;&#x6700;&#x5927;&#x9650;&#x5EA6;&#x5730;&#x51CF;&#x5C11;&#x4E86;&#x5F00;&#x53D1;&#x548C;&#x751F;&#x4EA7;&#x73AF;&#x5883;&#x4E4B;&#x95F4;&#x7684;&#x5DEE;&#x5F02;&#x3002;</p>
+<p>&#x7406;&#x60F3;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4F60;&#x7684;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;&#xFF08;&#x6BD4;&#x5982;&#x4E00;&#x4E2A; Spring Boot &#x53EF;&#x6267;&#x884C; jar&#xFF09;&#x6253;&#x5305;&#x4E86;&#x8FD0;&#x884C;&#x6240;&#x9700;&#x7684;&#x6240;&#x6709;&#x5185;&#x5BB9;&#x3002;</p>
+<p>&#x5728;&#x672C;&#x8282;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F7F;&#x7528;&#x300C;<a href="getting-started.html">&#x8D77;&#x6B65;</a>&#x300D;&#x7AE0;&#x8282;&#x4E2D;&#x5F00;&#x53D1;&#x7684;&#x4E00;&#x4E2A;<a href="getting-started.html#getting-started-first-application">&#x7B80;&#x5355;&#x5E94;&#x7528;&#x7A0B;&#x5E8F;</a>&#x4F5C;&#x4E3A;&#x8303;&#x4F8B;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8FD0;&#x884C;&#x5728;&#x4E91;&#x4E2D;&#x3002;</p>
+<p><strong>&#x5F85;&#x7EED;</strong></p>
+<footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">File Modify: 
+2019-08-09 19:34:18
+</span></footer>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="production-ready.html#production-ready-auditing" class="navigation navigation-prev navigation-unique" aria-label="Previous page: 62、下一步">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"六、部署 Spring Boot 应用程序","level":"1.8","depth":1,"next":{"title":"63、部署到云端","level":"1.8.1","depth":2,"ref":"","articles":[]},"previous":{"title":"62、下一步","level":"1.7.11","depth":2,"anchor":"#production-ready-auditing","path":"pages/production-ready.md","ref":"pages/production-ready.md#production-ready-auditing","articles":[]},"dir":"ltr"},"config":{"plugins":["github","splitter","tbfed-pagefooter","-lunr","-search","github-buttons","prism","-highlight","-livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{},"prism":{"css":["prismjs/themes/prism-twilight.css"]},"github":{"url":"https://github.com/DocsHome/springboot"},"splitter":{},"fontsettings":{"theme":"white","family":"sans","size":2},"github-buttons":{"repo":"DocsHome/springboot","types":["star","watch"],"size":"small"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"image-captions":{"caption":"_CAPTION_"}},"theme":"default","author":"oopsguy.com","pdf":{"pageNumbers":true,"fontSize":16,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":36,"bottom":36}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Spring Boot 中文文档","language":"zh-hans","links":{"sharing":{"all":true,"facebook":true,"google":true,"twitter":true,"weibo":true}},"gitbook":"*","description":"Spring Boot 中文文档","extension":null},"file":{"path":"pages/deployment.md","mtime":"2019-08-09T11:34:18.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2023-03-20T08:16:22.097Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
